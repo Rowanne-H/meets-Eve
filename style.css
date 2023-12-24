@@ -16,14 +16,14 @@ div {
 
 #top {
     width: 200px;
-    height: 153px;
+    height: 148px;
     background-color: ghostwhite;
     position: relative;
     border-radius: 50%/70% 70% 30% 30%;
 }
 
 #face {
-    width: 140px;
+    width: 145px;
     height: 93px;
     display: flex;
     background-color: black;
@@ -50,12 +50,12 @@ div {
 }
 
 .left-e {
-    border-radius: 25% 75%;
-    margin: 40px 16px;
+    border-radius: 30% 70%;
+    margin: 40px 17px;
 }
 
 .right-e {
-    border-radius: 75% 25%;
-    margin: 40px 11px;
+    border-radius: 70% 30%;
+    margin: 40px 12px;
 }
 
