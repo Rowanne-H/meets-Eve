@@ -30,7 +30,7 @@ div {
     position: relative;
     top:40px;
     margin:auto;
-    border-radius: 50%/70% 70% 30% 30%;
+    border-radius: 50% / 60% 60% 40% 40%;
 }
 
 .eye {
@@ -51,11 +51,11 @@ div {
 
 .left-e {
     border-radius: 25% 75%;
-    margin: 45px 16px;
+    margin: 40px 16px;
 }
 
 .right-e {
     border-radius: 75% 25%;
-    margin: 45px 11px;
+    margin: 40px 11px;
 }
 
