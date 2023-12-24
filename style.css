@@ -2,3 +2,60 @@ body {
     background-image: url("./images/sky.jpg");
     background-size: cover;
 }
+
+div {
+    box-sizing: border-box;
+}
+
+#eve {
+    width: 200px;
+    height: 395px;
+    display: block; 
+    margin: 20% 40%; 
+}
+
+#top {
+    width: 200px;
+    height: 153px;
+    background-color: ghostwhite;
+    position: relative;
+    border-radius: 50%/70% 70% 30% 30%;
+}
+
+#face {
+    width: 140px;
+    height: 93px;
+    display: flex;
+    background-color: black;
+    position: relative;
+    top:40px;
+    margin:auto;
+    border-radius: 50%/70% 70% 30% 30%;
+}
+
+.eye {
+    width: 41px;
+    height: 25px;
+    background: linear-gradient(
+    #4f91f4, 9%, black 9%, 13%,
+    #4f91f4 13%, 22%, black 22%, 26%,
+    #4f91f4 26%, 35%, black 35%, 39%,
+    #4f91f4 39%, 48%, black 48%, 52%,
+    #4f91f4 52%, 61%, black 61%, 65%,
+    #4f91f4 65%, 74%, black 74%, 78%,
+    #4f91f4 78%, 87%, black 87%, 91%,
+    #4f91f4 91%, #4f91f4 100%
+    );
+    position: relative;    
+}
+
+.left-e {
+    border-radius: 25% 75%;
+    margin: 45px 16px;
+}
+
+.right-e {
+    border-radius: 75% 25%;
+    margin: 45px 11px;
+}
+
