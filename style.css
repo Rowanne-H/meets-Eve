@@ -20,14 +20,10 @@ div {
     background-color: ghostwhite;
     position: relative;
     border-radius: 50% / 70% 70% 30% 30%;
-    border: 1px solid silver;
     z-index: 2;
     animation: evehead 3s ease alternate infinite; 
 }
-@keyframes eveeyes {
-    from{border: none;}
-    to {border: 1px solid silver;}
-}
+
 
 #face {
     width: 145px;
@@ -79,20 +75,29 @@ div {
     position: relative;   
     top: -5px;
     border-radius: 50% / 30% 30% 70% 70%;
-    border: 1px inset silver;
     z-index: 1;
     animation: eveheadshadow 3s ease alternate infinite; 
 }
 
 @keyframes eveheadshadow {
-    from{top: -44px; background-image: radial-gradient(ghostwhite, ghostwhite);}
-    to {top: -5px; background-image: radial-gradient(silver, ghostwhite);}
+    from{height: 0px;
+        top: -45px;
+        background-image: radial-gradient(ghostwhite, ghostwhite);}
+    to {height:15px;
+        top:-5px;
+        background-image: radial-gradient(silver, ghostwhite);}
 }
 
 #bottom {
     display: flex;
     position: relative; 
     top: -15px;
+    animation: evebottom 3s ease alternate infinite;
+}
+
+@keyframes evebottom {
+    from{top: -44px; }
+    to {top: -15px;}
 }
 
 #body {
@@ -102,9 +107,11 @@ div {
     position: relative; 
     overflow: hidden;
     display: flex;
-    
-    border-radius: 50% / 0 0 100% 100% ;
+    border-radius: 50% / 0 0 100% 100%;
+    animation: evebody 3s ease alternate infinite;
 }
+
+
 
 .hand {
     width: 25px;
