@@ -3,6 +3,10 @@ body {
     background-size: 100%;
 }
 
+div {
+    box-sizing: border-box;
+}
+
 #description {
     font-family: papyrus;
     font-weight: bold;
@@ -25,18 +29,14 @@ a {
     color: #2d5084;
 }
 
-div {
-    box-sizing: border-box;
-}
-
 #eve {
-    position:absolute;
+    position: absolute;
     width: 200px;
     height: 395px;
     display: block; 
-    transform:scale(0.9); 
-    top: 15%;
-    left: 65%;
+    transform: scale(0.9); 
+    top: 20%;
+    left: 60%;
     animation: fly 4s ease alternate;
 }
 
@@ -56,8 +56,8 @@ div {
     display: flex;
     background-color: black;
     position: relative;
-    top:40px;
-    margin:auto;
+    top: 40px;
+    margin: auto;
     border-radius: 50% / 60% 60% 40% 40%;  
 }
 
@@ -164,43 +164,43 @@ div {
 }
 
 @keyframes head {
-    from{top:0px;}
+    from {top:0px;}
     to {top:-15px;}
-  }
+}
 
 @keyframes eyes {
-    from{height: 1px; margin-top: 60px;}
+    from {height: 1px; margin-top: 60px;}
     to {height: 25px; margin-top: 40px;}
 }
 
 @keyframes headShadow {
-    from{}
+    from {}
     to {height:15px;
         top:-5px;
         background-image: radial-gradient(silver, ghostwhite);}
 }
 
 @keyframes body {
-    from{}
+    from {}
     to {top: -15px;}
 }
 
 @keyframes leftHand {
-    from{}
+    from {}
     to {transform: rotate(60deg); width: 30px; left: -15px;}
 }
 
 @keyframes rightHand {
-    from{}
+    from {}
     to {transform: rotate(-60deg); width: 30px; right: -15px;}
 }
 
 @keyframes handShadows {
-    from{}
+    from {}
     to {height: 140px; z-index: 1;}
 }
 
 @keyframes fly {
-    from{transform: scale(0.2); top: 3%; left: 4%}
+    from {transform: scale(0.2); top: 2%; left: 2%}
     to {transform: scale(0.9);}
 }
