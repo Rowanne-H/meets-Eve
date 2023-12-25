@@ -22,6 +22,11 @@ div {
     border-radius: 50% / 70% 70% 30% 30%;
     border: 1px solid silver;
     z-index: 2;
+    animation: evehead 3s ease alternate infinite; 
+}
+@keyframes eveeyes {
+    from{border: none;}
+    to {border: 1px solid silver;}
 }
 
 #face {
@@ -38,6 +43,7 @@ div {
 .eye {
     width: 41px;
     height: 25px;
+    margin-top: 40px;
     background: linear-gradient(
     #4f91f4, 9%, black 9%, 13%,
     #4f91f4 13%, 22%, black 22%, 26%,
@@ -47,18 +53,23 @@ div {
     #4f91f4 65%, 74%, black 74%, 78%,
     #4f91f4 78%, 87%, black 87%, 91%,
     #4f91f4 91%, #4f91f4 100%
-    );    
+    );  
+    animation: eveeyes 3s ease alternate infinite;  
+}
+
+@keyframes eveeyes {
+    from{height: 1px; margin-top: 60px;}
+    to {height: 25px; margin-top: 40px;}
 }
 
 .left-e {
     border-radius: 30% 70%;
-    margin: 40px 17px;
+    margin-left: 17px;
 }
 
 .right-e {
     border-radius: 70% 30%;
-    margin: 40px 12px;
-    
+    margin-left: 29px; 
 }
 
 #middle {
@@ -70,11 +81,18 @@ div {
     border-radius: 50% / 30% 30% 70% 70%;
     border: 1px inset silver;
     z-index: 1;
+    animation: eveheadshadow 3s ease alternate infinite; 
+}
+
+@keyframes eveheadshadow {
+    from{top: -44px; background-image: radial-gradient(ghostwhite, ghostwhite);}
+    to {top: -5px; background-image: radial-gradient(silver, ghostwhite);}
 }
 
 #bottom {
     display: flex;
     position: relative; 
+    top: -15px;
 }
 
 #body {
@@ -84,7 +102,7 @@ div {
     position: relative; 
     overflow: hidden;
     display: flex;
-    top: -15px;
+    
     border-radius: 50% / 0 0 100% 100% ;
 }
 
@@ -99,15 +117,14 @@ div {
 }
 
 .left-h {
-    top: -10px;
+    top: 5px;
     left: -15px;
 }
 
 .right-h {
-    top: -10px;
+    top: 5px;
     right: -15px; 
 }
-
 
 .shadow {
     width: 25px;
