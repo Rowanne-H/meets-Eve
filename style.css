@@ -3,16 +3,33 @@ body {
     background-size: 100%;
 }
 
+#description {
+    font-family: papyrus;
+    font-weight: bold;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+p {
+    color:#2d5084;
+    font-size: 16px;
+}
+
+
 div {
     box-sizing: border-box;
 }
 
 #eve {
+    position:absolute;
     width: 200px;
     height: 395px;
     display: block; 
     transform:scale(0.9); 
-    margin: 13% 70%;
+    top: 15%;
+    left: 65%;
     animation: fly 4s ease alternate;
 }
 
@@ -177,6 +194,6 @@ div {
 }
 
 @keyframes fly {
-    from{transform: scale(0.2); margin: 0% 0%;}
+    from{transform: scale(0.2); top: 3%; left: 4%}
     to {transform: scale(0.9);}
 }
