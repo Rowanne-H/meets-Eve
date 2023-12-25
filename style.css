@@ -12,7 +12,7 @@ div {
     height: 395px;
     display: block; 
     transform:scale(0.9); 
-    margin: 15% 70%;
+    margin: 13% 70%;
     animation: fly 4s ease alternate;
 }
 
@@ -23,6 +23,7 @@ div {
     position: relative;
     border-radius: 50% / 70% 70% 30% 30%;
     z-index: 2; 
+    animation: head 3s ease 5s alternate infinite; 
 }
 
 #face {
@@ -137,6 +138,11 @@ div {
     right: 0;
     rotate: 8deg;   
 }
+
+@keyframes head {
+    from{top:0px;}
+    to {top:-15px;}
+  }
 
 @keyframes eyes {
     from{height: 1px; margin-top: 60px;}
